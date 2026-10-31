@@ -2,6 +2,13 @@
 
 这是一个**单文件网页工具**：下载后用 Chrome / Edge 双击打开即可使用，不需要安装、注册、数据库，也不接 ERP 和银行流水。
 
+## 在线地址（电脑 / 手机 / 平板通用）
+
+- 主地址：<https://vane1981-2011.github.io/finance-workbench/>
+- 备用镜像：<https://caiwu-workbench.pages.dev/>
+
+两个地址内容相同，都是 HTTPS 静态页面，打开即用、无需登录。国内网络访问 GitHub Pages 偶尔偏慢时，可改用备用镜像。
+
 ## 这个版本是什么
 
 - 13 个财务类目：出纳、成本、销售、总账、报价、预算、税务、资金、应收应付、固定资产、财务报表、费用报销、审计合规
@@ -34,7 +41,16 @@
 | `.nojekyll` | GitHub Pages 用，避免忽略下划线开头的文件 |
 | `robots.txt` | 允许搜索引擎收录 |
 
-## 部署到 GitHub Pages
+## 部署与更新（维护者看）
+
+当前已部署在两处静态托管，更新时把最新 `index.html` 覆盖上去即可：
+
+| 托管方式 | 地址 | 更新方式 |
+| --- | --- | --- |
+| GitHub Pages | `https://vane1981-2011.github.io/finance-workbench/` | 覆盖仓库 `main` 分支根目录的 `index.html` |
+| Cloudflare Pages | `https://caiwu-workbench.pages.dev/` | 重新上传本目录到 `caiwu-workbench` 项目 |
+
+从零部署到 GitHub Pages：
 
 1. 新建一个公开仓库，例如 `finance-workbench`。
 2. 把本目录里的**全部文件**（含 `assets/`、`.nojekyll`、`robots.txt`）上传到仓库根目录。
